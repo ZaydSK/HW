@@ -1,18 +1,20 @@
+
 export default class ONode {
     // by minutes
-    waitBus : number; 
-    waitTaxi : number;
-    
-    constructor(waitBus: number, waitTaxi: number){
-        this.waitBus = waitBus
-        this.waitTaxi = waitTaxi
+    private _waitBus : number; 
+    private _waitTaxi: number;
+  
+	constructor($waitBus: number, $waitTaxi: number) {
+		this._waitBus = $waitBus;
+		this._waitTaxi = $waitTaxi;
+	}
+
+	public get waitBus(): number {
+		return this.waitBus;
+	}
+
+    public get waitTaxi(): number {
+        return this._waitTaxi;
     }
 
-    getWaitBus(){
-        return this.waitBus
-    }
-
-    getWaitTaxi(){
-        return this.waitTaxi
-    }
 }
