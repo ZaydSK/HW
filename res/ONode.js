@@ -1,12 +1,12 @@
 export default class ONode {
-    constructor(waitBus, waitTaxi) {
-        this.waitBus = waitBus;
-        this.waitTaxi = waitTaxi;
+    constructor($waitBus, $waitTaxi) {
+        this._waitBus = $waitBus;
+        this._waitTaxi = $waitTaxi;
     }
-    getWaitBus() {
+    get waitBus() {
         return this.waitBus;
     }
-    getWaitTaxi() {
-        return this.waitTaxi;
+    get waitTaxi() {
+        return this._waitTaxi;
     }
 }
