@@ -10,7 +10,7 @@ export default class ONode {
 	}
 
 	public get waitBus(): number {
-		return this.waitBus;
+		return this._waitBus;
 	}
 
     public get waitTaxi(): number {

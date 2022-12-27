@@ -4,7 +4,7 @@ export default class ONode {
         this._waitTaxi = $waitTaxi;
     }
     get waitBus() {
-        return this.waitBus;
+        return this._waitBus;
     }
     get waitTaxi() {
         return this._waitTaxi;
